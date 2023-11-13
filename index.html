@@ -1,0 +1,2443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>coin360</title>
+</head>
+<body>
+
+    <header class="header">
+        <section class="header-navbar d-flex">
+            <nav class="d-flex">
+                <a href="#" class="header-logo d-flex">
+                    <img src="Image/logo.svg" alt="">
+                </a>
+                <div class="navbar-items d-flex">
+                    <a href="#" class="nav-item d-flex"><span>Coins</span></a>
+                    <a href="#" class="nav-item d-flex"><span>Exchanges</span></a>
+                    <a href="#" class="nav-item nav-item3 d-flex">
+                        <span>NFT</span>
+                        <span>BETA</span>
+                    </a>
+                    <a href="#" class="nav-item nav-item4 d-flex">
+                        <span>News</span>
+                        <span>NEW</span>
+                    </a>
+                    <a href="#" class="nav-item d-flex"><span>Watchlist</span></a>
+                    <a href="#" class="nav-item d-flex"><span>Advertising</span></a>
+                    <a href="#" class="nav-item nav-item7 d-flex"><span>Newsletter</span></a>
+                    <div class="hidden-nav">
+                        <div class="hidden-nav-icon" onclick="showHiddenNav()">
+                            <span>···</span>
+                        </div>
+                        <div class="hidden-nav-detail" id="hiiden-nav">
+                            <div class="hidden-nav-detail-container" id="Trasform-y">
+                                <a href="#" class="hidden-nav-item">
+                                    <div>
+                                        <h4>Charts</h4>
+                                        <p>Explore more data on the digital asset markets with comprehensive graphs.</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="hidden-nav-item">
+                                    <div>
+                                        <h4>About</h4>
+                                        <p>Explore the general essentials of COIN360.</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="hidden-nav-item">
+                                    <div>
+                                        <h4>Press Releases</h4>
+                                        <p>Stay tuned for crypto company updates.</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="hidden-nav-item">
+                                    <div>
+                                        <h4>Events</h4>
+                                        <p>Find out about upcoming crypto events in this section.</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="hidden-nav-item">
+                                    <div>
+                                        <h4>FAQ</h4>
+                                        <p>Find answers to the most common questions regarding COIN360.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="spot-trade">
+                        <a href="#">
+                            <span class="spot-trade-content" id="spot-trade">
+                                <div class="spot-trade-item1" onmouseover="ShowSpotTrade1()" onmouseout="OffSpotTrade1()">
+                                    <img src="https://coin360.com/assets/xgo.svg" alt="">
+                                </div>
+                                <div class="spot-trade-item2" id="ShowSpot">
+                                    <span>Spot trade and</span>
+                                    <span>earn up</span>
+                                    <b>to 14% APY</b>
+                                </div>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            <div class="header-links d-flex">
+                <div class="search-bar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <a href="#" class="social-linls d-flex">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+                <a href="#" class="social-linls d-flex">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#" class="social-linls d-flex">
+                    <i class="fa-solid fa-share-nodes"></i>
+                </a>
+            </div>
+        </section>
+    </header>
+    
+
+    <header class="w-1200-header">
+        <section class="header2-left d-flex">
+            <button type="menu" class="burger-menu d-flex" onclick="ShowHeader2() , Translate1()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <a href="#" class="header-logo d-flex">
+                <img src="Image/logo.svg" alt="">
+            </a>
+        </section>
+        <section class="header2-right d-flex">
+            <div class="spot-trade">
+                <a href="#">
+                    <span class="spot-trade-content" id="spot-trade1">
+                        <div class="spot-trade-item1" onmouseover="ShowSpotTrade2()" onmouseout="OffSpotTrade2()">
+                            <img src="https://coin360.com/assets/xgo.svg" alt="">
+                        </div>
+                        <div class="spot-trade-item2" id="ShowSpot1">
+                            <span>Spot trade and</span>
+                            <span>earn up</span>
+                            <b>to 14% APY</b>
+                        </div>
+                    </span>
+                </a>
+            </div>
+            <div class="header-links d-flex">
+                <div class="search-bar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <a href="#" class="social-linls d-flex">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+                <a href="#" class="social-linls d-flex">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#" class="social-linls d-flex">
+                    <i class="fa-solid fa-share-nodes"></i>
+                </a>
+            </div>
+        </section>
+        <section class="W-768-header2-right">
+            <div class="spot-trade">
+                <a href="#">
+                    <span class="spot-trade-content" id="spot-trade2">
+                        <div class="spot-trade-item1" onmouseover="ShowSpotTrade3()" onmouseout="OffSpotTrade3()">
+                            <img src="https://coin360.com/assets/xgo.svg" alt="">
+                        </div>
+                        <div class="spot-trade-item2" id="ShowSpot2">
+                            <span>Spot trade and</span>
+                            <span>earn up</span>
+                            <b>to 14% APY</b>
+                        </div>
+                    </span>
+                </a>
+            </div>
+            <div class="search-btn">
+                <button type="menu">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <div class="setting-btn" onclick="ShowFilterMenu()">
+                <button type="menu">
+                    <i class="fa-solid fa-sliders"></i>
+                </button>
+            </div>
+            <div class="view-btn">
+                <button>
+                    <i class="fa-solid fa-table-list"></i>
+                    <!-- <i class="fa-solid fa-table-cells"></i> -->
+                </button>
+            </div>
+        </section>
+    </header>
+
+
+    <section class="header2-left-menu" id="header2-left-menu">
+        <div class="back" id="mask" onclick="OffHeader2()"></div>
+        <div class="header2-left-menu-container" id="header2-left-menu-container">
+            <div class="container1">
+                <div class="container2">
+                    <a href="#" class="header-logo-menu">
+                        <img src="Image/logo.svg" alt="">
+                    </a>
+                    <div class="header2-left-menu-links">
+                        <a href="#" class="left-link d-flex"><span>Coins</span></a>
+                        <a href="#" class="left-link d-flex"><span>Exchanges</span></a>
+                        <a href="#" class="left-link left-link3 d-flex">
+                            <span>NFT</span>
+                            <span>BETA</span>
+                        </a>
+                        <a href="#" class="left-link left-link4 d-flex">
+                            <span>News</span>
+                            <span>NEW</span>
+                        </a>
+                        <a href="#" class="left-link d-flex"><span>Watchlist</span></a>
+                        <a href="#" class="left-link d-flex"><span>Charts</span></a>
+                        <a href="#" class="left-link d-flex"><span>Press releases</span></a>
+                        <a href="#" class="left-link d-flex"><span>Events</span></a>
+                        <a href="#" class="left-link d-flex"><span>FAQ</span></a>
+                        <div class="left-link d-flex" onclick="ShowAboutMenu()">
+                            <span>About</span>
+                            <div class="about-icon">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div class="about-menu" id="about-menu">
+                            <a href="#">General Info</a>
+                            <a href="#">Careers</a>
+                            <a href="#">Methodology</a>
+                            <a href="#">Press Kit</a>
+                            <a href="#">Privacy Policy</a>
+                        </div>
+                        <a href="#" class="left-link d-flex"><span class="color">Advertising</span></a>
+                        <a href="#" class="left-link left-link7 d-flex"><span>Newsletter</span></a>
+                    </div>
+                    <div class="header2-left-menu-social d-flex">
+                        <div class="media-links d-flex">
+                            <a href="#">
+                                <i class="fa-brands fa-telegram"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-square-twitter"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-solid fa-square-envelope"></i>
+                            </a>
+                        </div>
+                        <p>
+                            Copyright © 2023 Coin360.com All Rights Reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+
+
+
+
+    <main class="d-flex">
+        <section class="filters d-flex">
+            <section class="left-filter d-flex">
+                <div class="left-filter-btn">
+                    <div class="left-filter-btn-content" onclick="ShowFilters()" onmousemove="ShowTitle()" onmouseout="OffTitle()">
+                        <a href="#">
+                            <i class="fa-solid fa-angle-left" id="left-filter-btn-content"></i>
+                        </a>
+                    </div>
+                    <div class="left-filter-btn-title1" id="left-filter-btn-title1">
+                        <span>Hide filters</span>
+                    </div>
+                    <div class="left-filter-btn-title2" id="left-filter-btn-title2">
+                        <span>Show filters</span>
+                    </div>
+                </div>
+                <div class="left-filter-container show3" id="left-filter-container">
+                    <div class="left-filter-items">
+                        <div class="type">
+                            <div class="type-title">
+                                <span>Type:</span>
+                                <span>Coins and tokens</span>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                            <div class="type-content"></div>
+                        </div>
+                        <div class="performance">
+                            <div class="performance-title">
+                                <span>Performance:</span>
+                                <span>1 day</span>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                            <div class="performance-content"></div>
+                        </div>
+                        <div class="gainers">
+                            <div class="gainers-title">
+                                <span>Gainers & Losers:</span>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                            <div class="gainers-content"></div>
+                        </div>
+                        <div class="block-size">
+                            <div class="block-size-title">
+                                <span>Block Size:</span>
+                                <span>Market Cap</span>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                            <div class="block-size-content"></div>
+                        </div>
+                        <div class="range-cost">
+                            <div class="range-cost-title">
+                                <span>M.cap range</span>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                            <div class="range-cost-content"></div>
+                        </div>
+                        <div class="type-of-coine">
+                            <div class="type-of-coine-title">
+                                <span>Hide </span>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                            <div class="type-of-coine-content"></div>
+                        </div>
+                    </div>
+                    <div class="left-filter-Reset">
+                        <span>Reset</span>
+                    </div>
+                </div>
+            </section>
+            <section class="right-filter d-flex">
+                <div class="country">
+                    <img src="https://coin360.com/assets/currency/USD-filter-basecurrency.svg" alt="">
+                    <span>USD</span>
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
+                <div class="flash">
+                    <i class="fa-solid fa-bolt"></i>
+                    <span>Flash</span>
+                </div>
+                <div class="view">
+                    <span>View:</span>
+                    <a href="#">
+                        <i class="fa-solid fa-table-list"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-table-cells"></i>
+                    </a>
+                </div>
+            </section>
+        </section>
+        
+        <section class="W-991-filters" id="W-991-filters">
+            <div class="drawer-mask-filters"></div>
+            <section class="W-991-filters-container Translate2">
+                <div class="W-991-filters-container1">
+                    <section class="W-991-filters-header">
+                        <button type="button" onclick="HideFiltersMenu()">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </section>
+                    <section class="W-991-filters-body">
+                        <section class="row1">
+                            <div class="filters-row-1">
+                                <div class="filters-row-1-1">
+                                    <span>Market Cap</span>
+                                    <span>0.28 %</span>
+                                </div>
+                                <div class="filters-row-1-2">
+                                    <span>$1,070,610,171,242</span>
+                                </div>
+                            </div>
+                            <div class="filters-row-2">
+                                <div class="filters-row-2-1">
+                                    <span>Vol 24h</span>
+                                    <span>9.57 %</span>
+                                </div>
+                                <div class="filters-row-2-2">
+                                    <span>$49,705,666,524</span>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="row2">
+                            <span>Reset All</span>
+                            <div class="row2-content">
+                                <section class="filters-row-3">
+                                    <span>Display on map</span>
+                                    <select name="" id="">
+                                        <option value="">Coins and tokens</option>
+                                        <option value="">Coins and tokens</option>
+                                        <option value="">Coins and tokens</option>
+                                    </select>
+                                </section>
+                                <section class="filters-row-4">
+                                    <span>Top</span>
+                                    <select name="" id="">
+                                        <option value="">All</option>
+                                        <option value="">All</option>
+                                        <option value="">All</option>
+                                    </select>
+                                </section>
+                                <section class="filters-row-5">
+                                    <span>Period</span>
+                                    <select name="" id="">
+                                        <option value="">1 day</option>
+                                        <option value="">1 day</option>
+                                        <option value="">1 day</option>
+                                    </select>
+                                </section>
+                                <section class="filters-row-6">
+                                    <span>Base currency</span>
+                                    <select name="" id="">
+                                        <option value="">USD</option>
+                                        <option value="">USD</option>
+                                        <option value="">USD</option>
+                                    </select>
+                                </section>
+                                <section class="filters-row-7">
+                                    <span id="filters-row-7-title">Block size depends on</span>
+                                    <div class="filters-row-7-content">
+                                        <button type="button" class="button-colors1" onclick="ShowMarketCap()">Market Cap</button>
+                                        <button type="button" class="button-colors2" onclick="ShowVolume()">Volume</button>
+                                    </div>
+                                </section>
+                                <section class="filters-row-8">
+                                    <span id="filters-row-8-title-1">M.cap range (USD)</span>
+                                    <div class="filters-row-8-1">
+                                        <p>
+                                            from  <span>0$</span> to <span>16.1b</span>
+                                        </p>
+                                        <div class="filters-row-8-1-btns">
+                                            <button type="reset">Reset</button>
+                                            <button type="submit">Apply</button>
+                                        </div>
+                                    </div>
+                                    <div class="filters-row-8-2">
+                                        <div class="filters-row-8-2-container">
+                                            <div class="p1"></div>
+                                            <div class="p2"></div>
+                                            <div class="p3">
+                                                <span class="p3-span" style="left: 0%;"></span>
+                                                <span class="p3-span" style="left: 17.0313%;"></span>
+                                                <span class="p3-span" style="left: 34.0626%;"></span>
+                                                <span class="p3-span" style="left: 51.0939%;"></span>
+                                                <span class="p3-span" style="left: 76.6408%;"></span>
+                                                <span style="left: 100%;"></span>
+                                            </div>
+                                            <div class="p4"></div>
+                                            <div class="p5"></div>
+                                            <div class="p6">
+                                                <span class="p6-span" style="transform: translateX(-50%); left: 0%;">0</span>
+                                                <span class="p6-span" style="transform: translateX(-50%); left: 17.032%;">100</span>
+                                                <span class="p6-span" style="transform: translateX(-50%); left: 34.0639%;">10k</span>
+                                                <span class="p6-span" style="transform: translateX(-50%); left: 51.0959%;">1m</span>
+                                                <span class="p6-span" style="transform: translateX(-50%); left: 76.6439%;">1b</span>
+                                                <span style="transform: translateX(-50%); left: 100%;">552.9b</span>
+                                            </div>
+                                        </div>
+                                        <div class="filters-row-8-2-container off2">
+                                            <div class="p1"></div>
+                                            <div class="p2" style="left: 0%; right: auto; width: 100%;"></div>
+                                            <div class="p3">
+                                                <span class="p3-span" style="left: 0%;"></span>
+                                                <span class="p3-span" style="left: 20.0266%;"></span>
+                                                <span class="p3-span" style="left: 40.0536%;"></span>
+                                                <span class="p3-span" style="left: 60.08%;"></span>
+                                                <span class="p3-span" style="left: 80.107%;"></span>
+                                                <span style="left: 100%;" style="left: 100%;"></span>
+                                            </div>
+                                            <div class="p4"></div>
+                                            <div class="p5" style="left: 100%;"></div>
+                                            <div class="p6">
+                                                <span class="p6-span" style="transform: translateX(-50%); left: 0%;">0</span>
+                                                <span class="p6-span" style="transform: translateX(-50%); left: 20.0266%;">100</span>
+                                                <span class="p6-span" style="transform: translateX(-50%); left: 40.0532%;">10k</span>
+                                                <span class="p6-span" style="transform: translateX(-50%); left: 60.0798%;">1m</span>
+                                                <span class="p6-span" style="transform: translateX(-50%); left: 80.1064%;">100m</span>
+                                                <span class="" style="transform: translateX(-50%); left: 100%;">9.7b</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="filters-row-9">
+                                    <span>Hide from the map</span>
+                                    <select name="" id="">
+                                        <option value="">Select...</option>
+                                        <option value="">Select...</option>
+                                        <option value="">Select...</option>
+                                    </select>
+                                </section>
+                            </div>
+                        </section>
+                    </section>
+                </div>
+            </section>
+        </section>
+
+
+        <section class="cooins-cost">
+            <section class="cooins-cost-container">
+                <div class="coin-group1">
+                    <section class="coin-1" onmouseover="hoverColor1()" onmouseout="hoverColor1Out()">
+                        <div class="coin1-header">
+                            <span>SHA256</span>
+                        </div>
+                        <a href="#" class="coin1-body">
+                            <div class="coin1-body-content">
+                                <div class="coin-1-name">
+                                    <svg class="styles_star__iLnXb opacity-0" width="39" height="37" viewBox="0 0 39 37" fill="none" 
+                                    xmlns="http://www.w3.org/2000/svg" role="img" 
+                                    style="width: 40px; height: 40px; right: -40px; top: -13.3333px;"
+                                    ><path class="mapStar" d="m19.964 1.497 4.399 10.953a1.5 1.5 0 0 0 1.29.938l11.776.799a.5.5 0 0 1 .287.882l-9.058 7.568a1.5 1.5 
+                                    0 0 0-.493 1.517l2.88 11.447a.5.5 0 0 1-.75.545l-9.997-6.276a1.5 1.5 
+                                    0 0 0-1.596 0l-9.996 6.276a.5.5 0 0 1-.75-.545l2.879-11.447a1.5 1.5 
+                                    0 0 0-.493-1.517L1.284 15.07a.5.5 0 0 1 .287-.883l11.776-.798a1.5 1.5 
+                                    0 0 0 1.29-.938l4.399-10.953a.5.5 0 0 1 .928 0Z" fill="#fff" stroke="#fff"></path></svg>
+                                    BTC
+                                </div>
+                                <div class="coin-1-price">
+                                    <span>$22,739.10</span>
+                                </div>
+                                <div class="coin-1-changing">
+                                    <span>-1.55%</span>
+                                </div>
+                            </div>
+                            <div class="coin-1-dominanced">
+                                <span>Dominance: 41.68%</span>
+                            </div>
+                        </a>
+                    </section>
+                </div>
+
+                <div class="coin-group2">
+                    <section class="coin-2" onmouseover="hoverColor2()" onmouseout="hoverColor2Out()">
+                            <div class="coin2-header">
+                                <span>PoS</span>
+                            </div>
+                            <div class="coin2-body">
+                                <div class="coin2-body-content">
+                                    <div class="coin-2-name">
+                                        <svg class="styles_star__iLnXb opacity-0" width="39" height="37" viewBox="0 0 39 37" fill="none" 
+                                        xmlns="http://www.w3.org/2000/svg" role="img" 
+                                        style="width: 40px; height: 40px; right: -40px; top: -13.3333px;"
+                                        ><path class="mapStar" d="m19.964 1.497 4.399 10.953a1.5 1.5 0 0 0 1.29.938l11.776.799a.5.5 0 0 1 .287.882l-9.058 7.568a1.5 1.5 
+                                        0 0 0-.493 1.517l2.88 11.447a.5.5 0 0 1-.75.545l-9.997-6.276a1.5 1.5 
+                                        0 0 0-1.596 0l-9.996 6.276a.5.5 0 0 1-.75-.545l2.879-11.447a1.5 1.5 
+                                        0 0 0-.493-1.517L1.284 15.07a.5.5 0 0 1 .287-.883l11.776-.798a1.5 1.5 
+                                        0 0 0 1.29-.938l4.399-10.953a.5.5 0 0 1 .928 0Z" fill="#fff" stroke="#fff"></path></svg>ETH
+                                    </div>
+                                    <div class="coin-2-price">
+                                        <span>$1,557.72</span>
+                                    </div>
+                                    <div class="coin-2-changing">
+                                        <span>-4.4%</span>
+                                    </div>
+                                </div>
+                                <div class="coin2-footer">
+                                    <a href="#" class="coin2-s-body w-140">
+                                        <div class="coin2-s-body-content">
+                                            <div class="coin-2-s-name">
+                                                ALGO
+                                            </div>
+                                            <div class="coin-2-s-price">
+                                                <span>$0.238159</span>
+                                            </div>
+                                            <div class="coin-2-s-changing">
+                                                <span>-5.67%</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="coin2-s-body w-140">
+                                        <div class="coin2-s-body-content">
+                                            <div class="coin-2-s-name">
+                                                EGLD
+                                            </div>
+                                            <div class="coin-2-s-price">
+                                                <span>$42.212</span>
+                                            </div>
+                                            <div class="coin-2-s-changing">
+                                                <span>-4.34%</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="coin2-s-body w-100">
+                                        <div class="coin2-s-body-content">
+                                            <div class="coin-2-s-name">
+                                                LUNC
+                                            </div>
+                                            <div class="coin-2-s-price">
+                                                <span>$0.000171</span>
+                                            </div>
+                                            <div class="coin-2-s-changing">
+                                                <span>-4.78%</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="coin2-s-body w-80">
+                                        <div class="coin2-s-body-content">
+                                            <div class="coin-2-s-name">
+                                                XTZ
+                                            </div>
+                                            <div class="coin-2-s-price">
+                                                <span>$1.066</span>
+                                            </div>
+                                            <div class="coin-2-s-changing">
+                                                <span>-4.91%</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="coin2-s-body w-20">
+                                        <div class="coin2-s-body-content">
+                                            <div class="coin-2-s-name">
+                                                QTUM
+                                            </div>
+                                            <div class="coin-2-s-price">
+                                                <span>$2.5015</span>
+                                            </div>
+                                            <div class="coin-2-s-changing">
+                                                <span>-5.27%</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                    </section>
+                    <section class="coin-group2-1">
+                        <div class="coin-DBFT" onmouseover="hoverColor3()" onmouseout="hoverColor3Out()">
+                            <div class="coin-DBFT-header">
+                                <span>dBFT</span>
+                            </div>
+                            <div class="coin-DBFT-body">
+                                <div class="coin-DBFT-body-content">
+                                    <div class="coin-3-name">
+                                        <svg class="_66rAhH opacity-0" viewBox="0 0 39 37" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+                                            <path class="mapStar" d="m19.964 1.497 4.399 10.953a1.5 1.5 0 0 0 1.29.938l11.776.799a.5.5 0 0 
+                                            1 .287.882l-9.058 7.568a1.5 1.5 0 0 0-.493 1.517l2.88 11.447a.5.5 0 0 1-.75.545l-9.997-6.276a1.5 1.5 0 0 
+                                            0-1.596 0l-9.996 6.276a.5.5 0 0 1-.75-.545l2.879-11.447a1.5 1.5 0 0 0-.493-1.517L1.284 15.07a.5.5 
+                                            0 0 1 .287-.883l11.776-.798a1.5 1.5 0 0 0 1.29-.938l4.399-10.953a.5.5 0 0 1 .928 0Z" fill="#fff" stroke="#fff"></path>
+                                        </svg>
+                                        BNB
+                                    </div>
+                                    <div class="coin-3-price">
+                                        <span>$309.088</span>
+                                    </div>
+                                    <div class="coin-3-changing">
+                                        <span>-4.15%</span>
+                                    </div>
+                                </div>
+                                <div class="coin-DBFT-footer">
+                                    <a href="#" class="coin3-s-body h-80">
+                                        <div class="coin3-s-body-content">
+                                            <div class="coin-3-s-name">
+                                                ATOM
+                                            </div>
+                                            <div class="coin-3-s-price">
+                                                <span>$13.8063</span>
+                                            </div>
+                                            <div class="coin-3-s-changing">
+                                                <span>-6.39%</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="coin3-s-body h-20">
+                                        <div class="coin3-s-body-content ">
+                                            <div class="coin-3-s-name">
+                                                NEO
+                                            </div>
+                                            <div class="coin-3-s-price">
+                                                <span>$9.317</span>
+                                            </div>
+                                            <div class="coin-3-s-changing">
+                                                <span>+0.63%</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="coin-Other" onmouseover="hoverColor4()" onmouseout="hoverColor4Out()">
+                            <div class="coin-Other-header">
+                                <span>Other</span>
+                            </div>
+                            <a href="#" class="coin-Other-body">
+                                <div class="coin-Other-body-content">
+                                    <div class="coin-4">
+                                        <div class="coin-4-name">
+                                           SOL
+                                        </div>
+                                        <div class="coin-4-price">
+                                            <span>$20.9335</span>
+                                        </div>
+                                        <div class="coin-4-changing">
+                                            <span>+2.69%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-5">
+                                        <div class="coin-5-name">
+                                            DOT
+                                        </div>
+                                        <div class="coin-5-price">
+                                            <span>$6.2924</span>
+                                        </div>
+                                        <div class="coin-5-changing">
+                                            <span>+0.93%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-6">
+                                        <div class="coin-6-name">
+                                            AVAX
+                                        </div>
+                                        <div class="coin-6-price">
+                                            <span>$18.0031</span>
+                                        </div>
+                                        <div class="coin-6-changing">
+                                            <span>+0.9%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-7">
+                                        <div class="coin-7-name">
+                                            HBAR
+                                        </div>
+                                        <div class="coin-7-price">
+                                            <span>$0.096092</span>
+                                        </div>
+                                        <div class="coin-7-changing">
+                                            <span>+12.81%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-8">
+                                        <div class="coin-8-name">
+                                            FIL
+                                        </div>
+                                        <div class="coin-8-price">
+                                            <span>$5.0461</span>
+                                        </div>
+                                        <div class="coin-8-changing">
+                                            <span>+0.63%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-9">
+                                        <div class="coin-9-name">
+                                            NEAR
+                                        </div>
+                                        <div class="coin-9-price">
+                                            <span>$2.2827</span>
+                                        </div>
+                                        <div class="coin-9-changing">
+                                            <span>+1.7%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-10">
+                                        <div class="coin-10-name">
+                                            VET
+                                        </div>
+                                        <div class="coin-10-price">
+                                            <span>$0.024313</span>
+                                        </div>
+                                        <div class="coin-10-changing">
+                                            <span>+3%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-11">
+                                        <div class="coin-11-name">
+                                            ICP
+                                        </div>
+                                        <div class="coin-11-price">
+                                            <span>$5.2502</span>
+                                        </div>
+                                        <div class="coin-11-changing">
+                                            <span>+2.29%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-12">
+                                        <div class="coin-12-name">
+                                            BIT
+                                        </div>
+                                        <div class="coin-12-price">
+                                            <span>$0.57311</span>
+                                        </div>
+                                        <div class="coin-12-changing">
+                                            <span>+0.59%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </section>
+
+                    <section class="coin-group2-2">
+                        <div class="coin-13" onmouseover="hoverColor5()" onmouseout="hoverColor5Out()">
+                            <div class="coin-13-header">
+                                <span>RPCA</span>
+                            </div>
+                            <a href="#" class="coin-13-body">
+                                <div class="coin-13-body-content">
+                                    <div class="coin13">
+                                        <div class="coin-13-name">
+                                            <svg class="_66rAhH  opacity-0" width="39" height="37" viewBox="0 0 39 37" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" style="width: 14.3319px; height: 14.3319px; right: -14.3319px; top: -4.77729px;">
+                                                <path class="mapStar" d="m19.964 1.497 4.399 10.953a1.5 1.5 0 0 0 1.29.938l11.776.799a.5.5 0 0 1 .287.882l-9.058 7.568a1.5 1.5 0 0 0-.493 1.517l2.88 11.447a.5.5 0 0 1-.75.545l-9.997-6.276a1.5 1.5 0 
+                                                0 0-1.596 0l-9.996 6.276a.5.5 0 0 1-.75-.545l2.879-11.447a1.5 1.5 0 0 0-.493-1.517L1.284 15.07a.5.5 0 0 1 .287-.883l11.776-.798a1.5 1.5 0 0 0 1.29-.938l4.399-10.953a.5.5 0 0 1 .928 0Z" fill="#fff" stroke="#fff"></path>
+                                            </svg>
+                                            XRP
+                                        </div>
+                                        <div class="coin-13-price">
+                                            <span>$0.382911</span>
+                                        </div>
+                                        <div class="coin-13-changing">
+                                            <span>-0.11%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="coin-14" onmouseover="hoverColor6()" onmouseout="hoverColor6Out()">
+                            <div class="coin-14-header">
+                                <span>Scrypt</span>
+                            </div>
+                            <a href="#" class="coin-14-body">
+                                <div class="coin-14-body-content">
+                                    <div class="coin14">
+                                        <div class="coin-14-name">
+                                            DOGE
+                                        </div>
+                                        <div class="coin-14-price">
+                                            <span>$0.081981</span>
+                                        </div>
+                                        <div class="coin-14-changing">
+                                            <span>+0.25%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin15">
+                                        <div class="coin-15-name">
+                                            LTC
+                                        </div>
+                                        <div class="coin-15-price">
+                                            <span>$93.8083</span>
+                                        </div>
+                                        <div class="coin-15-changing">
+                                            <span>-0.52%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="coin-16" onmouseover="hoverColor7()" onmouseout="hoverColor7Out()">
+                            <div class="coin-16-header">
+                                <span>Ouroboros</span>
+                            </div>
+                            <a href="#" class="coin-16-body">
+                                <div class="coin-16-body-content">
+                                    <div class="coin16">
+                                        <div class="coin-16-name">
+                                            ADA
+                                        </div>
+                                        <div class="coin-16-price">
+                                            <span>$0.368026</span>
+                                        </div>
+                                        <div class="coin-16-changing">
+                                            <span>+2.02%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="coin-17">
+                            <a href="#" class="coin-17-body">
+                                <div class="coin-17-body-content">
+                                    <div class="coin17">
+                                        <div class="coin-17-name">
+                                            TRX
+                                        </div>
+                                        <div class="coin-17-price">
+                                            <span>$0.064948</span>
+                                        </div>
+                                        <div class="coin-17-changing">
+                                            <span>+1.88%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin18">
+                                        <div class="coin-18-name">
+                                            TRX
+                                        </div>
+                                        <div class="coin-18-price">
+                                            <span>$0.064948</span>
+                                        </div>
+                                        <div class="coin-18-changing">
+                                            <span>+1.88%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin19">
+                                        <div class="coin-19-name">
+                                            TRX
+                                        </div>
+                                        <div class="coin-19-price">
+                                            <span>$0.064948</span>
+                                        </div>
+                                        <div class="coin-19-changing">
+                                            <span>+1.88%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="coin-20">
+                            <a href="#" class="coin-20-body">
+                                <div class="coin-20-body-content">
+                                    <div class="coin20">
+                                        <div class="coin-20-name">
+                                            XMR
+                                        </div>
+                                        <div class="coin-20-price">
+                                            <span>$164.038</span>
+                                        </div>
+                                        <div class="coin-20-changing">
+                                            <span>+2.13%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="coin-21">
+                            <a href="#" class="coin-21-body">
+                                <div class="coin-21-body-content">
+                                    <div class="coin21">
+                                        <div class="coin-21-name">
+                                            ETC
+                                        </div>
+                                        <div class="coin-21-price">
+                                            <span>$21.4131</span>
+                                        </div>
+                                        <div class="coin-21-changing">
+                                            <span>+0.74%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="coin-22">
+                            <a href="#" class="coin-22-body">
+                                <div class="coin-22-body-content">
+                                    <div class="coin22">
+                                        <div class="coin-22-name">
+                                            XLM
+                                        </div>
+                                        <div class="coin-22-price">
+                                            <span>$0.086398</span>
+                                        </div>
+                                        <div class="coin-22-changing">
+                                            <span>+0.57%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="coin-23">
+                            <a href="#" class="coin-23-body">
+                                <div class="coin-23-body-content">
+                                    <div class="coin23">
+                                        <div class="coin-23-name">
+                                            IMX
+                                        </div>
+                                        <div class="coin-23-price">
+                                            <span>$1.0747</span>
+                                        </div>
+                                        <div class="coin-23-changing">
+                                            <span>+10.89%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin24">
+                                        <div class="coin-24-name">
+                                            IMX
+                                        </div>
+                                        <div class="coin-24-price">
+                                            <span>$1.0747</span>
+                                        </div>
+                                        <div class="coin-24-changing">
+                                            <span>+10.89%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="coin-25">
+                            <a href="#" class="coin-25-body">
+                                <div class="coin-25-body-content">
+                                    <div class="coin25">
+                                        <div class="coin-25-name">
+                                            ZEC
+                                        </div>
+                                        <div class="coin-25-price">
+                                            <span>$45.5635</span>
+                                        </div>
+                                        <div class="coin-25-changing">
+                                            <span>+2.83%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin26">
+                                        <div class="coin-26-name">
+                                            ZEC
+                                        </div>
+                                        <div class="coin-26-price">
+                                            <span>$45.5635</span>
+                                        </div>
+                                        <div class="coin-26-changing">
+                                            <span>+2.83%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="coin-27">
+                            <a href="#" class="coin-27-body">
+                                <div class="coin-27-body-content">
+                                    <div class="coin27">
+                                        <div class="coin-27-name">
+                                           SOL
+                                        </div>
+                                        <div class="coin-27-price">
+                                            <span>$20.9335</span>
+                                        </div>
+                                        <div class="coin-27-changing">
+                                            <span>+2.69%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="coin-28">
+                            <a href="#" class="coin-28-body">
+                                <div class="coin-28-body-content">
+                                    <div class="coin28">
+                                        <div class="coin-28-name">
+                                           SOL
+                                        </div>
+                                        <div class="coin-28-price">
+                                            <span>$20.9335</span>
+                                        </div>
+                                        <div class="coin-28-changing">
+                                            <span>+2.69%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="coin-group3">
+                    <section class="coin-group3-1" onmouseover="hoverColor8()" onmouseout="hoverColor8Out()">
+                        <div class="coin-group3-1-header">
+                            <span>Ethereum tokens</span>
+                        </div>
+                        <section class="coin-group3-1-body">
+                            <section class="coin-group3-1-bigs">
+                                <div class="coin-29">
+                                    <div class="coin-29-name">
+                                        <svg class="styles_star__iLnXb opacity-0" viewBox="0 0 39 37" fill="none" 
+                                        xmlns="http://www.w3.org/2000/svg" role="img" 
+                                        "
+                                        ><path class="mapStar" d="m19.964 1.497 4.399 10.953a1.5 1.5 0 0 0 1.29.938l11.776.799a.5.5 0 0 1 .287.882l-9.058 7.568a1.5 1.5 
+                                        0 0 0-.493 1.517l2.88 11.447a.5.5 0 0 1-.75.545l-9.997-6.276a1.5 1.5 
+                                        0 0 0-1.596 0l-9.996 6.276a.5.5 0 0 1-.75-.545l2.879-11.447a1.5 1.5 
+                                        0 0 0-.493-1.517L1.284 15.07a.5.5 0 0 1 .287-.883l11.776-.798a1.5 1.5 
+                                        0 0 0 1.29-.938l4.399-10.953a.5.5 0 0 1 .928 0Z" fill="#fff" stroke="#fff"></path></svg>
+                                        USDC
+                                    </div>
+                                    <div class="coin-29-price">
+                                        <span>$1.0006</span>
+                                    </div>
+                                    <div class="coin-29-changing">
+                                        <span>-0.33%</span>
+                                    </div>
+                                </div>
+                                <div class="coin-30">
+                                    <div class="coin-30-name">
+                                        MATIC
+                                    </div>
+                                    <div class="coin-30-price">
+                                        <span>$1.0006</span>
+                                    </div>
+                                    <div class="coin-30-changing">
+                                        <span>-0.33%</span>
+                                    </div>
+                                </div>
+                                <div class="coin-31">
+                                    <div class="coin-31-name">
+                                        SHIB
+                                    </div>
+                                    <div class="coin-31-price">
+                                        <span>$1.0006</span>
+                                    </div>
+                                    <div class="coin-31-changing">
+                                        <span>-0.33%</span>
+                                    </div>
+                                </div>
+                                <div class="coin-32">
+                                    <div class="coin-32-name">
+                                        STETH
+                                    </div>
+                                    <div class="coin-32-price">
+                                        <span>$1.0006</span>
+                                    </div>
+                                    <div class="coin-32-changing">
+                                        <span>-0.33%</span>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="coin-group3-1-middel">
+                                <div class="coin-33">
+                                    <div class="coin-33-name">
+                                        DAI
+                                    </div>
+                                    <div class="coin-33-price">
+                                        <span>$1.0006</span>
+                                    </div>
+                                    <div class="coin-33-changing">
+                                        <span>-0.33%</span>
+                                    </div>
+                                </div>
+                                <div class="coin-34">
+                                    <div class="coin-34-name">
+                                        UNI
+                                    </div>
+                                    <div class="coin-34-price">
+                                        <span>$1.0006</span>
+                                    </div>
+                                    <div class="coin-34-changing">
+                                        <span>-0.33%</span>
+                                    </div>
+                                </div>
+                                <div class="coin-35">
+                                    <div class="coin-35-name">
+                                        WBTC
+                                    </div>
+                                    <div class="coin-35-price">
+                                        <span>$1.0006</span>
+                                    </div>
+                                    <div class="coin-35-changing">
+                                        <span>-0.33%</span>
+                                    </div>
+                                </div>
+                                <div class="coin-36">
+                                    <div class="coin-36-name">
+                                        LINK
+                                    </div>
+                                    <div class="coin-36-price">
+                                        <span>$1.0006</span>
+                                    </div>
+                                    <div class="coin-36-changing">
+                                        <span>-0.33%</span>
+                                    </div>
+                                </div>
+                                <div class="coin-37">
+                                    <div class="coin-37-name">
+                                        LINK
+                                    </div>
+                                    <div class="coin-37-price">
+                                        <span>$1.0006</span>
+                                    </div>
+                                    <div class="coin-37-changing">
+                                        <span>-0.33%</span>
+                                    </div>
+                                </div>
+                                <div class="coin-38">
+                                    <div class="coin-38-name">
+                                        LINK
+                                    </div>
+                                    <div class="coin-38-price">
+                                        <span>$1.0006</span>
+                                    </div>
+                                    <div class="coin-38-changing">
+                                        <span>-0.33%</span>
+                                    </div>
+                                </div>
+                                <div class="coin-39">
+                                    <div class="coin-39-name">
+                                        LINK
+                                    </div>
+                                    <div class="coin-39-price">
+                                        <span>$1.0006</span>
+                                    </div>
+                                    <div class="coin-39-changing">
+                                        <span>-0.33%</span>
+                                    </div>
+                                </div>
+                                <div class="coin-40">
+                                    <div class="coin-40-name">
+                                        LINK
+                                    </div>
+                                    <div class="coin-40-price">
+                                        <span>$1.0006</span>
+                                    </div>
+                                    <div class="coin-40-changing">
+                                        <span>-0.33%</span>
+                                    </div>
+                                </div>
+                                <div class="coin-41">
+                                    <div class="coin-41-name">
+                                        LINK
+                                    </div>
+                                    <div class="coin-41-price">
+                                        <span>$1.0006</span>
+                                    </div>
+                                    <div class="coin-41-changing">
+                                        <span>-0.33%</span>
+                                    </div>
+                                </div>
+                                <div class="coin-42">
+                                    <div class="coin-42-name">
+                                        LINK
+                                    </div>
+                                    <div class="coin-42-price">
+                                        <span>$1.0006</span>
+                                    </div>
+                                    <div class="coin-42-changing">
+                                        <span>-0.33%</span>
+                                    </div>
+                                </div>
+                                <div class="coin-43">
+                                    <div class="coin-43-name">
+                                        LINK
+                                    </div>
+                                    <div class="coin-43-price">
+                                        <span>$1.0006</span>
+                                    </div>
+                                    <div class="coin-43-changing">
+                                        <span>-0.33%</span>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="coin-group3-1-small">
+                                <div class="coin-44">
+                                    <div class="coin-44-name">
+                                        DAI
+                                    </div>
+                                    <div class="coin-44-price">
+                                        <span>$1.0006</span>
+                                    </div>
+                                    <div class="coin-44-changing">
+                                        <span>-0.33%</span>
+                                    </div>
+                                </div>
+                                <div class="coin-45">
+                                    <div class="coin-44-name">
+                                        DAI
+                                    </div>
+                                    <div class="coin-44-price">
+                                        <span>$1.0006</span>
+                                    </div>
+                                    <div class="coin-44-changing">
+                                        <span>-0.33%</span>
+                                    </div>
+                                </div>
+                                <div class="coin-46">
+                                    <div class="coin-44-name">
+                                        DAI
+                                    </div>
+                                    <div class="coin-44-price">
+                                        <span>$1.0006</span>
+                                    </div>
+                                    <div class="coin-44-changing">
+                                        <span>-0.33%</span>
+                                    </div>
+                                </div>
+                                <div class="coin-47">
+                                    <div class="coin-44-name">
+                                        DAI
+                                    </div>
+                                    <div class="coin-44-price">
+                                        <span>$1.0006</span>
+                                    </div>
+                                    <div class="coin-44-changing">
+                                        <span>-0.33%</span>
+                                    </div>
+                                </div>
+                                <div class="coin-48">
+                                    <div class="coin-44-name">
+                                        DAI
+                                    </div>
+                                    <div class="coin-44-price">
+                                        <span>$1.0006</span>
+                                    </div>
+                                    <div class="coin-44-changing">
+                                        <span>-0.33%</span>
+                                    </div>
+                                </div>
+                                <div class="coin-49">
+                                    <div class="coin-44-name">
+                                        DAI
+                                    </div>
+                                    <div class="coin-44-price">
+                                        <span>$1.0006</span>
+                                    </div>
+                                    <div class="coin-44-changing">
+                                        <span>-0.33%</span>
+                                    </div>
+                                </div>
+                                <div class="coin-50">
+                                    <div class="coin-44-name">
+                                        DAI
+                                    </div>
+                                    <div class="coin-44-price">
+                                        <span>$1.0006</span>
+                                    </div>
+                                    <div class="coin-44-changing">
+                                        <span>-0.33%</span>
+                                    </div>
+                                </div>
+                                <div class="coin-51">
+                                    <div class="coin-44-name">
+                                        DAI
+                                    </div>
+                                    <div class="coin-44-price">
+                                        <span>$1.0006</span>
+                                    </div>
+                                    <div class="coin-44-changing">
+                                        <span>-0.33%</span>
+                                    </div>
+                                </div>
+                                <div class="coin-52">
+                                    <div class="coin-44-name">
+                                        DAI
+                                    </div>
+                                    <div class="coin-44-price">
+                                        <span>$1.0006</span>
+                                    </div>
+                                    <div class="coin-44-changing">
+                                        <span>-0.33%</span>
+                                    </div>
+                                </div>
+                                <div class="coin-53">
+                                    <div class="coin-44-name">
+                                        DAI
+                                    </div>
+                                    <div class="coin-44-price">
+                                        <span>$1.0006</span>
+                                    </div>
+                                    <div class="coin-44-changing">
+                                        <span>-0.33%</span>
+                                    </div>
+                                </div>
+                                <div class="coin-54">
+                                    <div class="coin-44-name">
+                                        DAI
+                                    </div>
+                                    <div class="coin-44-price">
+                                        <span>$1.0006</span>
+                                    </div>
+                                    <div class="coin-44-changing">
+                                        <span>-0.33%</span>
+                                    </div>
+                                </div>
+                                <div class="coin-55">
+                                    <div class="coin-44-name">
+                                        DAI
+                                    </div>
+                                    <div class="coin-44-price">
+                                        <span>$1.0006</span>
+                                    </div>
+                                    <div class="coin-44-changing">
+                                        <span>-0.33%</span>
+                                    </div>
+                                </div>
+                                <div class="coin-56">
+                                    <div class="coin-44-name">
+                                        DAI
+                                    </div>
+                                    <div class="coin-44-price">
+                                        <span>$1.0006</span>
+                                    </div>
+                                    <div class="coin-44-changing">
+                                        <span>-0.33%</span>
+                                    </div>
+                                </div>
+                                <div class="coin-57">
+                                    <div class="coin-44-name">
+                                        DAI
+                                    </div>
+                                    <div class="coin-44-price">
+                                        <span>$1.0006</span>
+                                    </div>
+                                    <div class="coin-44-changing">
+                                        <span>-0.33%</span>
+                                    </div>
+                                </div>
+                                <div class="coin-58">
+                                    <div class="coin-44-name">
+                                        DAI
+                                    </div>
+                                    <div class="coin-44-price">
+                                        <span>$1.0006</span>
+                                    </div>
+                                    <div class="coin-44-changing">
+                                        <span>-0.33%</span>
+                                    </div>
+                                </div>
+                                <div class="coin-59">
+                                    <div class="coin-44-name">
+                                        DAI
+                                    </div>
+                                    <div class="coin-44-price">
+                                        <span>$1.0006</span>
+                                    </div>
+                                    <div class="coin-44-changing">
+                                        <span>-0.33%</span>
+                                    </div>
+                                </div>
+                                <div class="coin-60">
+                                    <div class="coin-44-name">
+                                        DAI
+                                    </div>
+                                    <div class="coin-44-price">
+                                        <span>$1.0006</span>
+                                    </div>
+                                    <div class="coin-44-changing">
+                                        <span>-0.33%</span>
+                                    </div>
+                                </div>
+                                <div class="coin-61">
+                                    <div class="coin-44-name">
+                                        DAI
+                                    </div>
+                                    <div class="coin-44-price">
+                                        <span>$1.0006</span>
+                                    </div>
+                                    <div class="coin-44-changing">
+                                        <span>-0.33%</span>
+                                    </div>
+                                </div>
+                                <div class="coin-62">
+                                    <div class="coin-44-name">
+                                        DAI
+                                    </div>
+                                    <div class="coin-44-price">
+                                        <span>$1.0006</span>
+                                    </div>
+                                    <div class="coin-44-changing">
+                                        <span>-0.33%</span>
+                                    </div>
+                                </div>
+                                <div class="coin-63">
+                                    <div class="coin-44-name">
+                                        DAI
+                                    </div>
+                                    <div class="coin-44-price">
+                                        <span>$1.0006</span>
+                                    </div>
+                                    <div class="coin-44-changing">
+                                        <span>-0.33%</span>
+                                    </div>
+                                </div>
+                                <div class="coin-64">
+                                    <div class="coin-44-name">
+                                        DAI
+                                    </div>
+                                    <div class="coin-44-price">
+                                        <span>$1.0006</span>
+                                    </div>
+                                    <div class="coin-44-changing">
+                                        <span>-0.33%</span>
+                                    </div>
+                                </div>
+                                <div class="coin-65">
+                                    <div class="coin-44-name">
+                                        DAI
+                                    </div>
+                                    <div class="coin-44-price">
+                                        <span>$1.0006</span>
+                                    </div>
+                                    <div class="coin-44-changing">
+                                        <span>-0.33%</span>
+                                    </div>
+                                </div>
+                                <div class="coin-66">
+                                    <div class="coin-44-name">
+                                        DAI
+                                    </div>
+                                    <div class="coin-44-price">
+                                        <span>$1.0006</span>
+                                    </div>
+                                    <div class="coin-44-changing">
+                                        <span>-0.33%</span>
+                                    </div>
+                                </div>
+                                <div class="coin-67">
+                                    <div class="coin-44-name">
+                                        DAI
+                                    </div>
+                                    <div class="coin-44-price">
+                                        <span>$1.0006</span>
+                                    </div>
+                                    <div class="coin-44-changing">
+                                        <span>-0.33%</span>
+                                    </div>
+                                </div>
+                                <div class="coin-68">
+                                    <div class="coin-44-name">
+                                        DAI
+                                    </div>
+                                    <div class="coin-44-price">
+                                        <span>$1.0006</span>
+                                    </div>
+                                    <div class="coin-44-changing">
+                                        <span>-0.33%</span>
+                                    </div>
+                                </div>
+                                <div class="coin-69">
+                                    <div class="coin-44-name">
+                                        DAI
+                                    </div>
+                                    <div class="coin-44-price">
+                                        <span>$1.0006</span>
+                                    </div>
+                                    <div class="coin-44-changing">
+                                        <span>-0.33%</span>
+                                    </div>
+                                </div>
+                                <div class="coin-70">
+                                    <div class="coin-44-name">
+                                        DAI
+                                    </div>
+                                    <div class="coin-44-price">
+                                        <span>$1.0006</span>
+                                    </div>
+                                    <div class="coin-44-changing">
+                                        <span>-0.33%</span>
+                                    </div>
+                                </div>
+                                <div class="coin-71">
+                                    <div class="coin-44-name">
+                                        DAI
+                                    </div>
+                                    <div class="coin-44-price">
+                                        <span>$1.0006</span>
+                                    </div>
+                                    <div class="coin-44-changing">
+                                        <span>-0.33%</span>
+                                    </div>
+                                </div>
+                                <div class="coin-72">
+                                    <div class="coin-44-name">
+                                        DAI
+                                    </div>
+                                    <div class="coin-44-price">
+                                        <span>$1.0006</span>
+                                    </div>
+                                    <div class="coin-44-changing">
+                                        <span>-0.33%</span>
+                                    </div>
+                                </div>
+                                <div class="coin-73">
+                                    <div class="coin-44-name">
+                                        DAI
+                                    </div>
+                                    <div class="coin-44-price">
+                                        <span>$1.0006</span>
+                                    </div>
+                                    <div class="coin-44-changing">
+                                        <span>-0.33%</span>
+                                    </div>
+                                </div>
+                                <div class="coin-74">
+                                    <div class="coin-44-name">
+                                        DAI
+                                    </div>
+                                    <div class="coin-44-price">
+                                        <span>$1.0006</span>
+                                    </div>
+                                    <div class="coin-44-changing">
+                                        <span>-0.33%</span>
+                                    </div>
+                                </div>
+                                <div class="coin-75">
+                                    <div class="coin-44-name">
+                                        DAI
+                                    </div>
+                                    <div class="coin-44-price">
+                                        <span>$1.0006</span>
+                                    </div>
+                                    <div class="coin-44-changing">
+                                        <span>-0.33%</span>
+                                    </div>
+                                </div>
+                                <div class="coin-76">
+                                    <div class="coin-44-name">
+                                        DAI
+                                    </div>
+                                    <div class="coin-44-price">
+                                        <span>$1.0006</span>
+                                    </div>
+                                    <div class="coin-44-changing">
+                                        <span>-0.33%</span>
+                                    </div>
+                                </div>
+                                <div class="coin-77">
+                                    <div class="coin-44-name">
+                                        DAI
+                                    </div>
+                                    <div class="coin-44-price">
+                                        <span>$1.0006</span>
+                                    </div>
+                                    <div class="coin-44-changing">
+                                        <span>-0.33%</span>
+                                    </div>
+                                </div>
+                                <div class="coin-78">
+                                    <div class="coin-44-name">
+                                        DAI
+                                    </div>
+                                    <div class="coin-44-price">
+                                        <span>$1.0006</span>
+                                    </div>
+                                    <div class="coin-44-changing">
+                                        <span>-0.33%</span>
+                                    </div>
+                                </div>
+                                <div class="coin-79">
+                                    <div class="coin-44-name">
+                                        DAI
+                                    </div>
+                                    <div class="coin-44-price">
+                                        <span>$1.0006</span>
+                                    </div>
+                                    <div class="coin-44-changing">
+                                        <span>-0.33%</span>
+                                    </div>
+                                </div>
+                                <div class="coin-80">
+                                    <div class="coin-44-name">
+                                        DAI
+                                    </div>
+                                    <div class="coin-44-price">
+                                        <span>$1.0006</span>
+                                    </div>
+                                    <div class="coin-44-changing">
+                                        <span>-0.33%</span>
+                                    </div>
+                                </div>
+                                <div class="coin-81">
+                                    <div class="coin-44-name">
+                                        DAI
+                                    </div>
+                                    <div class="coin-44-price">
+                                        <span>$1.0006</span>
+                                    </div>
+                                    <div class="coin-44-changing">
+                                        <span>-0.33%</span>
+                                    </div>
+                                </div>
+                                <div class="coin-82">
+                                    <div class="coin-44-name">
+                                        DAI
+                                    </div>
+                                    <div class="coin-44-price">
+                                        <span>$1.0006</span>
+                                    </div>
+                                    <div class="coin-44-changing">
+                                        <span>-0.33%</span>
+                                    </div>
+                                </div>
+                                <div class="coin-83">
+                                    <div class="coin-44-name">
+                                        DAI
+                                    </div>
+                                    <div class="coin-44-price">
+                                        <span>$1.0006</span>
+                                    </div>
+                                    <div class="coin-44-changing">
+                                        <span>-0.33%</span>
+                                    </div>
+                                </div>
+
+                                
+                            </section>
+                        </section>
+                    </section>
+                   
+                    <section class="coin-group3-2" onmouseover="hoverColor9()" onmouseout="hoverColor9Out()">
+                        <div class="coin-group3-2-header">
+                            <span>Omni tokens</span>
+                        </div>
+                        <a href="#" class="coin-group3-2-body">
+                            <div class="coin-84-name">
+                                <svg class="_66rAhH opacity-0" width="39" height="37" viewBox="0 0 39 37" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" style=" right: -31.1059px; top: -10.3686px;">
+                                    <path class="mapStar" d="m19.964 1.497 4.399 10.953a1.5 1.5 0 0 0 
+                                    1.29.938l11.776.799a.5.5 0 0 1 .287.882l-9.058 7.568a1.5 1.5 0 0 0-.493 
+                                    1.517l2.88 11.447a.5.5 0 0 1-.75.545l-9.997-6.276a1.5 1.5 0 0 0-1.596 0l-9.996 
+                                    6.276a.5.5 0 0 1-.75-.545l2.879-11.447a1.5 1.5 0 0 0-.493-1.517L1.284 
+                                    15.07a.5.5 0 0 1 .287-.883l11.776-.798a1.5 1.5 0 0 0 1.29-.938l4.399-10.953a.5.5 0 0 1 .928 0Z" 
+                                    fill="#fff" stroke="#fff"></path>
+                                </svg>
+                                USDT
+                            </div>
+                            <div class="coin-84-price">
+                                <span>$1.0007</span>
+                            </div>
+                            <div class="coin-84-changing">
+                                <span>0%</span>
+                            </div>
+                        </a>
+                    </section>
+
+                    <section class="coin-group3-3">
+                        <section class="coin-group3-3-col-1" onmouseover="hoverColor10()" onmouseout="hoverColor10Out()">
+                            <div class="coin-group3-3-header">
+                                <span>Other tokens</span>
+                            </div>
+                            <div class="coin-group3-3-body">
+                                <div class="coin-group3-3-body-content">
+                                    <div class="coin-85">
+                                        <div class="coin-85-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-85-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-85-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-88">
+                                        <div class="coin-88-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-88-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-88-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-88">
+                                        <div class="coin-88-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-88-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-88-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-89">
+                                        <div class="coin-89-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-89-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-89-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-89">
+                                        <div class="coin-89-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-89-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-89-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-89">
+                                        <div class="coin-89-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-89-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-89-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-89">
+                                        <div class="coin-89-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-89-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-89-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-89">
+                                        <div class="coin-89-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-89-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-89-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-89">
+                                        <div class="coin-89-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-89-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-89-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-86">
+                                        <div class="coin-86-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-86-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-86-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-88">
+                                        <div class="coin-88-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-88-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-88-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-88">
+                                        <div class="coin-88-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-88-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-88-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-89">
+                                        <div class="coin-89-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-89-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-89-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-89">
+                                        <div class="coin-89-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-89-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-89-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-89">
+                                        <div class="coin-89-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-89-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-89-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-89">
+                                        <div class="coin-89-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-89-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-89-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-89">
+                                        <div class="coin-89-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-89-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-89-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-89">
+                                        <div class="coin-89-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-89-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-89-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-87">
+                                        <div class="coin-87-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-87-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-87-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-88">
+                                        <div class="coin-88-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-88-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-88-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-89">
+                                        <div class="coin-89-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-89-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-89-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-89">
+                                        <div class="coin-89-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-89-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-89-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-89">
+                                        <div class="coin-89-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-89-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-89-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-89">
+                                        <div class="coin-89-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-89-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-89-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-89">
+                                        <div class="coin-89-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-89-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-89-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-89">
+                                        <div class="coin-89-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-89-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-89-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-89">
+                                        <div class="coin-89-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-89-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-89-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-89">
+                                        <div class="coin-89-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-89-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-89-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-89">
+                                        <div class="coin-89-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-89-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-89-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-89">
+                                        <div class="coin-89-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-89-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-89-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-89">
+                                        <div class="coin-89-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-89-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-89-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-89">
+                                        <div class="coin-89-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-89-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-89-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-89">
+                                        <div class="coin-89-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-89-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-89-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-89">
+                                        <div class="coin-89-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-89-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-89-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-89">
+                                        <div class="coin-89-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-89-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-89-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-89">
+                                        <div class="coin-89-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-89-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-89-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-89">
+                                        <div class="coin-89-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-89-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-89-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-89">
+                                        <div class="coin-89-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-89-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-89-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-89">
+                                        <div class="coin-89-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-89-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-89-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-89">
+                                        <div class="coin-89-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-89-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-89-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-89">
+                                        <div class="coin-89-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-89-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-89-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-89">
+                                        <div class="coin-89-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-89-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-89-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-89">
+                                        <div class="coin-89-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-89-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-89-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-89">
+                                        <div class="coin-89-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-89-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-89-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-89">
+                                        <div class="coin-89-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-89-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-89-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-89">
+                                        <div class="coin-89-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-89-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-89-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-89">
+                                        <div class="coin-89-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-89-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-89-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-89">
+                                        <div class="coin-89-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-89-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-89-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-89">
+                                        <div class="coin-89-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-89-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-89-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-89">
+                                        <div class="coin-89-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-89-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-89-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-89">
+                                        <div class="coin-89-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-89-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-89-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-89">
+                                        <div class="coin-89-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-89-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-89-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-89">
+                                        <div class="coin-89-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-89-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-89-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-89">
+                                        <div class="coin-89-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-89-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-89-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-89">
+                                        <div class="coin-89-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-89-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-89-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-89">
+                                        <div class="coin-89-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-89-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-89-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-89">
+                                        <div class="coin-89-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-89-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-89-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-89">
+                                        <div class="coin-89-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-89-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-89-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-89">
+                                        <div class="coin-89-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-89-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-89-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                    <div class="coin-89">
+                                        <div class="coin-89-name">
+                                            TON
+                                        </div>
+                                        <div class="coin-89-price">
+                                            <span>$2.3211</span>
+                                        </div>
+                                        <div class="coin-89-changing">
+                                            <span>-1.61%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <div class="coin-group3-3-col-2">
+                            <section class="coin-group3-3-row-1">
+                                <div class="coin-90">
+                                    <div class="coin-90-name">
+                                        BUSD
+                                    </div>
+                                    <div class="coin-90-price">
+                                        <span>$0.964943</span>
+                                    </div>
+                                    <div class="coin-90-changing">
+                                        <span>+0.33%</span>
+                                    </div>
+                                </div>
+                                <div class="coin-91">
+                                    <div class="coin-91-name">
+                                        BUSD
+                                    </div>
+                                    <div class="coin-91-price">
+                                        <span>$0.964943</span>
+                                    </div>
+                                    <div class="coin-91-changing">
+                                        <span>+0.33%</span>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="coin-group3-3-row-2">
+                                <div class="coin-92">
+                                    <div class="coin-92-name">
+                                        TON
+                                    </div>
+                                    <div class="coin-92-price">
+                                        <span>$2.3211</span>
+                                    </div>
+                                    <div class="coin-92-changing">
+                                        <span>-1.61%</span>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </section>
+                </div> 
+            </section>
+        </section>
+
+        <section class="zoom">
+            <div class="zoom-in">
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="zoom-out">
+                <i class="fa-solid fa-minus"></i>
+            </div>
+            <div class="fullScreen">
+                <i class="fa-solid fa-expand"></i>
+            </div>
+        </section>
+
+        <section class="footer-zoom">
+            <div class="In-Out-icons">
+                <button>
+                    <i class="fa-solid fa-minus"></i>
+                </button>
+                <button>
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+            <div class="share-map">
+                <div class="share-icon">
+                    <i class="fa-solid fa-share-nodes"></i>
+                </div>
+                <p>Share Map</p>
+            </div>
+        </section>
+        <section class="bonus">
+            
+        </section>
+        <!-- <section class="footer"></section> -->
+    </main>
+    <!-- <section class="footer"></section> -->
+
+    <script src="app.js"></script>
+    
+</body>
+</html>
